@@ -1,0 +1,25 @@
+{
+  "name": "conpan",
+  "version": "1.0.1",
+  "description": "Convert full width to half width and half width to full width",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Convert japan"
+  ],
+  "author": "dovutuan <tuando.0598@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dovutuan/conpan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dovutuan/conpan/issues"
+  },
+  "homepage": "https://github.com/dovutuan/conpan"
+}
