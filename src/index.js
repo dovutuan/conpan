@@ -95,7 +95,6 @@ const halfKanaMap = {
     '・': '･',
 };
 
-
 /**
  * Convert full-width character string to half-width character string
  * @param str
@@ -118,7 +117,8 @@ const toHalfSizeCharacters = (str) => {
         .replace(/￥/g, '\\')
         .replace(
             /[！＂＃＄％＆＇（）＊＋，－．／：；＜＝＞？＠［＼］＾＿｀｛｜｝]/g,
-            (s) => String.fromCharCode(s.charCodeAt(0) - 65248));
+            (s) => String.fromCharCode(s.charCodeAt(0) - 65248)
+        );
 }
 
 /**
@@ -143,7 +143,8 @@ const toFullSizeCharacters = (str) => {
         .replace(/\\/g, '￥')
         .replace(
             /[! "# $ % & \' \( \) \* \+ , \- \. \/ : ; < = > \? @ \[ \\ \] \^ _ ` \{ \ \| \} ]/g,
-            (s) => String.fromCharCode(s.charCodeAt(0) + 65248));
+            (s) => String.fromCharCode(s.charCodeAt(0) + 65248)
+        );
 }
 
 
