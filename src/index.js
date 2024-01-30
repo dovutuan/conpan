@@ -1,4 +1,4 @@
-import {invert as _invert} from 'lodash';
+import invert from 'lodash.invert';
 
 /**
  * Full-width Kana: Half-width Kana MAP
@@ -127,7 +127,7 @@ const toHalfSizeCharacters = (str) => {
  * @return full-width character string
  */
 const toFullSizeCharacters = (str) => {
-    const fullKanaMap = _invert(halfKanaMap);
+    const fullKanaMap = invert(halfKanaMap);
     const reg = new RegExp('(' + Object.keys(fullKanaMap).join('|') + ')', 'g');
 
     return str
